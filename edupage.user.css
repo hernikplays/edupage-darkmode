@@ -6,245 +6,273 @@
 @author         hernikplays
 @license        CC-BY-SA-4.0
 ==/UserStyle== */
-
 @-moz-document domain("edupage.org") {
-/* Main */
-.edubarSidebar {
-    background-color: #141e28 !important;
-    border-right: 1px solid #141e28 !important;
+    /* Main */
+    .edubarSidebar {
+        background-color: #141e28 !important;
+        border-right: 1px solid #141e28 !important;
+    }
+
+    .edubarSmartLink span,
+    .edubarMenuitem span {
+        color: #abb6c2 !important;
+    }
+
+    .edubarMenuitem a {
+        background-color: #00111e !important;
+    }
+
+    .edubarMenuitem a:hover {
+        background-color: #00213b !important;
+    }
+
+    .active a,
+    .selected,
+    .edubarMenulist {
+        background-color: #00111e !important;
+        border: 1px solid #141e28 !important;
+        /*box-shadow: none !important;*/
+    }
+
+    /* /USER/ page */
+    .bgDiv {
+        background-color: #0a121f !important;
+    }
+
+    .userButton {
+        background-color: #252c36 !important;
+    }
+
+    .userButton:hover {
+        background-color: #222f3f !important;
+    }
+
+    h1,
+    .title {
+        color: white !important;
+    }
+
+    .subtitle {
+        color: #585f65 !important;
+    }
+    .tml-item-desc-subtitle {
+        color: #6d757d !important;
+    }
+
+    .gotoDay {
+        background: #121212 !important;
+    }
+
+    .sholiday {
+        background: #b6b5c5 !important;
+    }
+
+    /* NOTIFICATIONS page */
+    .hwMainListMain {
+        background-color: #0e1722 !important;
+        color: white !important;
+    }
+
+    .hwList {
+        background-color: #252c36 !important;
+    }
+
+    .hwMenuListSeparator {
+        border-bottom: 1px solid #3f4449 !important;
+    }
+
+    .hwWeekItem {
+        background-color: #1e242d !important;
+        color: white !important;
+    }
+
+    .hwWeek-num-done {
+        color: white !important;
+    }
+
+    .ribbon-tab {
+        background-color: #1e242d !important;
+    }
+
+    .edubarRibbon {
+        border-bottom: 1px #1e242d solid !important;
+    }
+
+    .hwSearch {
+        color: white !important;
+    }
+
+    .hwsideElem {
+        background-color: #141e28 !important;
+    }
+
+    .ui-state-default {
+        color: white !important;
+    }
+
+    .ui-datepicker-header {
+        background-color: #1e242d !important;
+        color: white !important;
+    }
+
+    .ui-state-hover {
+        background-color: #00213b !important;
+        border: 1px solid #00213b !important;
+    }
+
+    .dropDown {
+        background-color: #1e242d !important;
+        color: white !important;
+    }
 }
 
-.edubarSmartLink span,
-.edubarMenuitem span {
-    color: #abb6c2 !important;
-}
+@-moz-document regexp(".+\\.edupage.org\\/dashboard\\/eb.php\\?mode=ttday") {
+    /* Part for Třídní Kniha */
+    .edubarMainNoSkin div {
+        background-color: #0e1722;
+    }
+    .dashboard-lessons,
+    .dashboard-lessons div {
+        background-color: #252c36 !important;
+    }
 
-.edubarMenuitem a {
-    background-color: #00111e !important;
-}
+    .lesson,
+    .id,
+    .dd {
+        color: #4864d2 !important;
+    }
 
-.edubarMenuitem a:hover {
-    background-color: #00213b !important;
-}
+    .ui-datepicker-title {
+        background-color: #1e242d !important;
+        color: white !important;
+    }
 
-.active a,
-.selected,
-.edubarMenulist {
-    background-color: #00111e !important;
-    border: 1px solid #141e28 !important;
-    /*box-shadow: none !important;*/
-}
+    table {
+        color: white !important;
+    }
 
-/* /USER/ page */
-.bgDiv {
-    background-color: #0a121f !important;
-}
+    .ui-datepicker-week-end {
+        background-color: #1e242d !important;
+    }
 
-.userButton {
-    background-color: #252c36 !important;
-}
-
-.userButton:hover {
-    background-color: #222f3f !important;
-}
-
-h1,
-.title {
-    color: white !important;
-}
-
-.subtitle {
-    color: #585f65 !important;
-}
-.tml-item-desc-subtitle {
-    color: #6d757d !important;
-}
-
-.gotoDay {
-    background: #121212 !important;
-}
-
-.sholiday {
-    background: #b6b5c5 !important;
-}
-
-/* NOTIFICATIONS page */
-.hwMainListMain {
-    background-color: #0e1722 !important;
-    color: white !important;
-}
-
-.hwList {
-    background-color: #252c36 !important;
-}
-
-.hwMenuListSeparator {
-    border-bottom: 1px solid #3f4449 !important;
-}
-
-.hwWeekItem {
-    background-color: #1e242d !important;
-    color: white !important;
-}
-
-.hwWeek-num-done {
-    color: white !important;
-}
-
-.ribbon-tab {
-    background-color: #1e242d !important;
-}
-
-.edubarRibbon {
-    border-bottom: 1px #1e242d solid !important;
-}
-
-.hwSearch {
-    color: white !important;
-}
-
-.hwsideElem {
-    background-color: #141e28 !important;
-}
-
-.ui-state-default {
-    color: white !important;
-}
-
-.ui-datepicker-header {
-    background-color: #1e242d !important;
-    color: white !important;
-}
-
-.ui-state-hover {
-    background-color: #00213b !important;
-    border: 1px solid #00213b !important;
-}
-
-.dropDown {
-    background-color: #1e242d !important;
-    color: white !important;
-}
-}
-
-@-moz-document regexp(".+\\.edupage.org\\/dashboard\\/eb.php.+") {
-/* Part for Třídní Kniha */
-.edubarMainNoSkin div {
-    background-color: #0e1722;
-}
-.dashboard-lessons,
-.dashboard-lessons div {
-    background-color: #252c36 !important;
-}
-
-.lesson,
-.id,
-.dd {
-    color: #4864d2 !important;
-}
-
-.ui-datepicker-title {
-    background-color: #1e242d !important;
-    color: white !important;
-}
-
-table {
-    color: white !important;
-}
-
-.ui-datepicker-week-end {
-    background-color: #1e242d !important;
-}
-
-.asc-button-container .asc-button {
-    background: #1e242d !important;
-    color: white !important;
-    border: 1px solid #1e242d;
-}
+    .asc-button-container .asc-button {
+        background: #1e242d !important;
+        color: white !important;
+        border: 1px solid #1e242d;
+    }
 }
 
 @-moz-document regexp(".+\\.edupage.org\\/znamky.+") {
-/* Part for Marks */
-#jw3cbc3c46_zsv {
-    background-color: #0e1722;
-}
-.zsvHeaderTitle,
-.zsvFilterElem {
-    background-color: #001627;
+    /* Part for Marks */
+    #jw3cbc3c46_zsv {
+        background-color: #0e1722;
+    }
+    .zsvHeaderTitle,
+    .zsvFilterElem {
+        background-color: #001627;
+    }
+
+    .zsvHeaderTabs {
+        background-color: #1e242d !important;
+        color: white !important;
+        border-bottom: 1px solid #1e242d !important;
+    }
+    html {
+        background-color: #0e1722 !important;
+    }
+    body,
+    tr td a,
+    .znZnamka,
+    .emptyListBig {
+        color: white !important;
+    }
+
+    .flat-button-gray,
+    .flat-button-gray:hover {
+        background-color: #777a7b;
+    }
+
+    td,
+    .poznamkyContentDiv li {
+        background-color: #252c36 !important;
+        color: white !important;
+    }
+
+    .poznamkyContentDiv li {
+        border-bottom: 2px solid #252c36 !important;
+    }
+
+    .descriptionBox,
+    .desctitle td {
+        background-color: #1e242d !important;
+    }
+
+    .fixedCell {
+        border-right: 2px solid #777a7b !important;
+    }
+
+    .ui-dialog {
+        background-color: #252c36 !important;
+        border: 1px #252c36 solid !important;
+    }
+
+    h3,
+    .edubarTableList div,
+    .expandMonthBtn {
+        color: white !important;
+    }
+
+    .pohladBtn:hover {
+        background-color: #00213b !important;
+    }
+
+    [src="/znamky/pics/has_comment.png"] {
+        filter: brightness(0) invert(1) !important;
+    }
+
+    [style="text-align:center;white-space:nowrap;background-color:#fff59d;"] {
+        /* jednička */
+        background-color: #dfc94f !important;
+    }
+
+    [style="text-align:center;white-space:nowrap;background-color:#c5e1a5;"] {
+        /* dvojka */
+        background-color: #9ec671 !important;
+    }
+
+    [style="text-align:center;white-space:nowrap;background-color:#80deea;"] {
+        /* trojka */
+        background-color: #5fafb9 !important;
+    }
+
+    /* TODO: Nevim jaky je styl 4 a 5 */
 }
 
-.zsvHeaderTabs {
-    background-color: #1e242d !important;
-    color: white !important;
-    border-bottom: 1px solid #1e242d !important;
-}
-html {
-    background-color: #0e1722 !important;
-}
-body,
-tr td a,
-.znZnamka,
-.emptyListBig {
-    color: white !important;
-}
-
-.flat-button-gray,
-.flat-button-gray:hover {
-    background-color: #777a7b;
-}
-
-td,
-.poznamkyContentDiv li {
-    background-color: #252c36 !important;
-    color: white !important;
-}
-
-.poznamkyContentDiv li {
-    border-bottom: 2px solid #252c36 !important;
-}
-
-.descriptionBox,
-.desctitle td {
-    background-color: #1e242d !important;
-}
-
-.fixedCell {
-    border-right: 2px solid #777a7b !important;
-}
-
-.ui-dialog {
-    background-color: #252c36 !important;
-    border: 1px #252c36 solid !important;
-}
-
-h3,
-.edubarTableList div,
-.expandMonthBtn {
-    color: white !important;
-}
-
-.pohladBtn:hover {
-    background-color: #00213b !important;
-}
-
-[src="/znamky/pics/has_comment.png"] {
-    filter: brightness(0) invert(1) !important;
-}
-
-[style="text-align:center;white-space:nowrap;background-color:#fff59d;"] {
-    /* jednička */
-    background-color: #dfc94f !important;
-}
-
-[style="text-align:center;white-space:nowrap;background-color:#c5e1a5;"] {
-    /* dvojka */
-    background-color: #9ec671 !important;
-}
-
-[style="text-align:center;white-space:nowrap;background-color:#80deea;"] {
-    /* trojka */
-    background-color: #5fafb9 !important;
-}
-
-/* TODO: Nevim jaky je styl 4 a 5 */
+@-moz-document regexp(".+\\.edupage.org\\/dashboard\\/eb.php\\?mode=timetable") {
+    /* Part for Timetable */
+    #fitheight{
+        background: #141e28 none repeat scroll 0% 0% !important; /* horní panel */
+    }
+    
+    [style="display: flex; flex-direction: row; margin-bottom: 10px; white-space: pre; overflow: auto hidden;"] span{
+        color: white !important;
+    }
+    
+    [style="background: rgb(227, 242, 253) none repeat scroll 0% 0%; padding: 10px 15px; border-top: 2px solid rgb(33, 150, 243); cursor: pointer; text-transform: uppercase; font-size: 12px; font-weight: bold; color: rgb(51, 51, 51); flex-shrink: 1; min-width: 10px; overflow: hidden; text-overflow: ellipsis; margin-right: 15px;"]{
+        background: #00111e none repeat scroll 0% 0% !important; /* vybrané tlačítko */
+    }
+    .print-nobreak, [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative;"],[style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 80px; height: 45px; overflow: hidden; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"]{
+        background-color:#141e28 !important; /* panel třída + hodiny */
+        color:white !important;
+    }
+    
+    [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative; border-right: 1px solid rgb(245, 245, 245); border-bottom: 1px solid rgb(245, 245, 245);"],[style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 104px; height: 110px; overflow: hidden; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; pointer-events: none; border-left: 1px solid rgb(245, 245, 245); border-right: 1px solid rgb(245, 245, 245);"]{ /* buňky WIP */
+        background-color: #00111e !important;
+        border-right: #141e28 1px solid !important;
+        border-bottom: #141e28 1px solid !important;
+    }
+    
+    [style="position: sticky; left: 0px; width: 80px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"]{
+        background-color: #00111e !important; /* názvy dnů */
+    }
 }
