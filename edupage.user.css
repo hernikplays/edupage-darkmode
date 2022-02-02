@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Edupage Darkmode
 @namespace      github.com/hernikplays/edupage-darkmode
-@version        1.0.0
+@version        0.1.0
 @description    Edupage darkmode based on the mobile dark theme
 @author         hernikplays
 @license        CC-BY-SA-4.0
@@ -250,88 +250,100 @@
 
 @-moz-document regexp(".+\\.edupage.org\\/dashboard\\/eb.php\\?mode=timetable") {
     /* Part for Timetable */
-    #fitheight{
-        background: #141e28 none repeat scroll 0% 0% !important; /* horní panel */
+    #fitheight {
+        background: #141e28 none repeat scroll 0% 0% !important;
+        /* horní panel */
     }
-    
-    [style="display: flex; flex-direction: row; margin-bottom: 10px; white-space: pre; overflow: auto hidden;"] span{
+
+    [style="display: flex; flex-direction: row; margin-bottom: 10px; white-space: pre; overflow: auto hidden;"] span {
         color: white !important;
     }
-    
-    [style="background: rgb(227, 242, 253) none repeat scroll 0% 0%; padding: 10px 15px; border-top: 2px solid rgb(33, 150, 243); cursor: pointer; text-transform: uppercase; font-size: 12px; font-weight: bold; color: rgb(51, 51, 51); flex-shrink: 1; min-width: 10px; overflow: hidden; text-overflow: ellipsis; margin-right: 15px;"]{
-        background: #00111e none repeat scroll 0% 0% !important; /* vybrané tlačítko */
+
+    [style="background: rgb(227, 242, 253) none repeat scroll 0% 0%; padding: 10px 15px; border-top: 2px solid rgb(33, 150, 243); cursor: pointer; text-transform: uppercase; font-size: 12px; font-weight: bold; color: rgb(51, 51, 51); flex-shrink: 1; min-width: 10px; overflow: hidden; text-overflow: ellipsis; margin-right: 15px;"] {
+        background: #00111e none repeat scroll 0% 0% !important;
+        /* vybrané tlačítko */
     }
-    .print-nobreak, [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative;"],[style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 80px; height: 45px; overflow: hidden; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"]{
-        background-color:#141e28 !important; /* panel třída + hodiny */
-        color:white !important;
+    .print-nobreak,
+    [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative;"],
+    [style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 80px; height: 45px; overflow: hidden; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"] {
+        background-color: #141e28 !important;
+        /* panel třída + hodiny */
+        color: white !important;
     }
-    
-    [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative; border-right: 1px solid rgb(245, 245, 245); border-bottom: 1px solid rgb(245, 245, 245);"],[style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 104px; height: 110px; overflow: hidden; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; pointer-events: none; border-left: 1px solid rgb(245, 245, 245); border-right: 1px solid rgb(245, 245, 245);"]{ /* buňky WIP */
+
+    [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative; border-right: 1px solid rgb(245, 245, 245); border-bottom: 1px solid rgb(245, 245, 245);"],
+    [style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 104px; height: 110px; overflow: hidden; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; pointer-events: none; border-left: 1px solid rgb(245, 245, 245); border-right: 1px solid rgb(245, 245, 245);"] {
+        /* buňky WIP */
         background-color: #00111e !important;
         border-right: #141e28 1px solid !important;
         border-bottom: #141e28 1px solid !important;
     }
-    
-    [style="position: sticky; left: 0px; width: 80px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"]{
-        background-color: #00111e !important; /* názvy dnů */
+
+    [style="position: sticky; left: 0px; width: 80px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"] {
+        background-color: #00111e !important;
+        /* názvy dnů */
     }
 }
 
-@-moz-document regexp(".+\\.edupage.org\\/elearning.+"){
+@-moz-document regexp(".+\\.edupage.org\\/elearning.+") {
     /* Úkol */
-    .etest-meditor-searchdiv,.etest-meditor-test-list-month{
-        color:white !important;
+    .etest-meditor-searchdiv,
+    .etest-meditor-test-list-month {
+        color: white !important;
         background: #0f161d !important;
     }
-    .etest-meditor-test-item.selected,.etest-meditor-content{
-        background-color :#141e28 !important;
+    .etest-meditor-test-item.selected,
+    .etest-meditor-content {
+        background-color: #141e28 !important;
         color: white !important;
     }
-    
-    .etest-meditor-test-list-tabs{
+
+    .etest-meditor-test-list-tabs {
         background: #0a121f !important;
     }
-    .etest-meditor-test-list-tabs img{
+    .etest-meditor-test-list-tabs img {
         filter: brightness(0) invert(1);
     }
-    
-    .etest-studentVysledkyElem{
+
+    .etest-studentVysledkyElem {
         border-bottom: #002d50 solid 1px !important;
     }
-    
-    .hwPoznamka{
+
+    .hwPoznamka {
         border-top: #002d50 solid 1px !important;
     }
-    
-    .etest-player-content{
+
+    .etest-player-content {
         background: #0a121f !important;
     }
-    .etest-player-header-inner{
+    .etest-player-header-inner {
         background: #141e28 !important;
         color: white !important;
     }
-    
-    .etest-player-header-inner i,.etest-question-number-title,[name="elaboration"]{
+
+    .etest-player-header-inner i,
+    .etest-question-number-title,
+    [name="elaboration"] {
         color: white !important;
     }
-    
-    .etest-screen-inner{
+
+    .etest-screen-inner {
         background: #252c36 !important;
         border: #252c36 1px solid !important;
     }
-    .etest-question-content{
+    .etest-question-content {
         background: #252c36 !important;
         color: white !important;
     }
-    .etest-elaboration-title{
+    .etest-elaboration-title {
         background-color: #252c36 !important;
         color: white !important;
     }
-    .ui-dialog{
+    .ui-dialog {
         background-color: #252c36 !important;
         border: #252c36 1px solid !important;
     }
-    .ui-widget-content{
-        color:white !important;
+    .ui-widget-content {
+        color: white !important;
     }
 }
