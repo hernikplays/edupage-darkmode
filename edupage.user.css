@@ -53,7 +53,7 @@
     }
 
     .subtitle {
-        color: #585f65 !important;
+        color: #acacac !important;
     }
     .tml-item-desc-subtitle {
         color: #6d757d !important;
@@ -274,5 +274,64 @@
     
     [style="position: sticky; left: 0px; width: 80px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"]{
         background-color: #00111e !important; /* názvy dnů */
+    }
+}
+
+@-moz-document regexp(".+\\.edupage.org\\/elearning.+"){
+    /* Úkol */
+    .etest-meditor-searchdiv,.etest-meditor-test-list-month{
+        color:white !important;
+        background: #0f161d !important;
+    }
+    .etest-meditor-test-item.selected,.etest-meditor-content{
+        background-color :#141e28 !important;
+        color: white !important;
+    }
+    
+    .etest-meditor-test-list-tabs{
+        background: #0a121f !important;
+    }
+    .etest-meditor-test-list-tabs img{
+        filter: brightness(0) invert(1);
+    }
+    
+    .etest-studentVysledkyElem{
+        border-bottom: #002d50 solid 1px !important;
+    }
+    
+    .hwPoznamka{
+        border-top: #002d50 solid 1px !important;
+    }
+    
+    .etest-player-content{
+        background: #0a121f !important;
+    }
+    .etest-player-header-inner{
+        background: #141e28 !important;
+        color: white !important;
+    }
+    
+    .etest-player-header-inner i,.etest-question-number-title,[name="elaboration"]{
+        color: white !important;
+    }
+    
+    .etest-screen-inner{
+        background: #252c36 !important;
+        border: #252c36 1px solid !important;
+    }
+    .etest-question-content{
+        background: #252c36 !important;
+        color: white !important;
+    }
+    .etest-elaboration-title{
+        background-color: #252c36 !important;
+        color: white !important;
+    }
+    .ui-dialog{
+        background-color: #252c36 !important;
+        border: #252c36 1px solid !important;
+    }
+    .ui-widget-content{
+        color:white !important;
     }
 }
