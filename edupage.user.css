@@ -4,7 +4,7 @@
 @homepageURL    https://github.com/hernikplays/edupage-darkmode
 @supportURL     https://github.com/hernikplays/edupage-darkmode/issues
 @updateURL      https://github.com/hernikplays/edupage-darkmode/raw/main/edupage.user.css
-@version        0.1.0
+@version        0.1.1
 @description    Edupage darkmode based on the mobile dark theme
 @author         hernikplays
 @license        CC-BY-SA-4.0
@@ -253,8 +253,9 @@
 
 @-moz-document regexp(".+\\.edupage.org\\/dashboard\\/eb.php\\?mode=timetable") {
     /* Part for Timetable */
-    #fitheight {
+    #fitheight,[style="position: relative; background: rgb(255, 255, 255) none repeat scroll 0% 0%; width: 250px; margin-right: 10px;"], [style="flex: 0 0 auto; background-color: rgb(255, 255, 255); border-bottom: 1px solid rgb(128, 128, 128); padding: 10px; margin: 0px 0px 15px; position: relative; display: flex; flex-direction: row; align-items: center;"] {
         background: #141e28 none repeat scroll 0% 0% !important;
+        color: white !important;
         /* horní panel */
     }
 
@@ -268,7 +269,7 @@
     }
     .print-nobreak,
     [style="flex: 1 1 0px; z-index: 1; background-color: rgb(255, 255, 255); position: relative;"],
-    [style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 80px; height: 45px; overflow: hidden; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"] {
+    [style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 80px; height: 45px; overflow: hidden; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"], [style="position: absolute; box-sizing: border-box; left: 0px; top: 0px; width: 73px; height: 45px; overflow: hidden; text-align: center; display: flex; flex-direction: column; justify-content: center; font-size: 12px; background: rgb(255, 255, 255) none repeat scroll 0% 0%;"] {
         background-color: #141e28 !important;
         /* panel třída + hodiny */
         color: white !important;
@@ -282,7 +283,7 @@
         border-bottom: #141e28 1px solid !important;
     }
 
-    [style="position: sticky; left: 0px; width: 80px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"] {
+    [style="position: sticky; left: 0px; width: 80px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"], [style="position: sticky; left: 0px; width: 73px; flex: 0 0 auto; z-index: 2; background-color: rgb(255, 255, 255);"] {
         background-color: #00111e !important;
         /* názvy dnů */
     }
@@ -348,5 +349,8 @@
     }
     .ui-widget-content {
         color: white !important;
+    }
+    .etest-results-dbbox{
+        background-color: #252c36 !important;
     }
 }
