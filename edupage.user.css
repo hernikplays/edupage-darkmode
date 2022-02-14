@@ -4,7 +4,7 @@
 @homepageURL    https://github.com/hernikplays/edupage-darkmode
 @supportURL     https://github.com/hernikplays/edupage-darkmode/issues
 @updateURL      https://github.com/hernikplays/edupage-darkmode/raw/main/edupage.user.css
-@version        0.2.0
+@version        0.2.1
 @description    Edupage darkmode based on the mobile dark theme
 @author         hernikplays
 @license        CC-BY-SA-4.0
@@ -356,6 +356,11 @@
     }
     .etest-results-dbbox {
         background-color: #252c36 !important;
+    }
+
+    .etest-pair-item.isPlaying.isConnected .etest-answer-inner.pair-r,
+    .etest-pair-item.isPlaying.isConnected .etest-answer-inner.pair-l {
+        background-color: #141e28 !important;
     }
 }
 
