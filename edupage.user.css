@@ -4,7 +4,7 @@
 @homepageURL    https://github.com/hernikplays/edupage-darkmode
 @supportURL     https://github.com/hernikplays/edupage-darkmode/issues
 @updateURL      https://github.com/hernikplays/edupage-darkmode/raw/main/edupage.user.css
-@version        0.2.1
+@version        0.2.2
 @description    Edupage darkmode based on the mobile dark theme
 @author         hernikplays
 @license        CC-BY-SA-4.0
@@ -34,6 +34,7 @@
     .edubarMenulist {
         background-color: #00111e !important;
         border: 1px solid #141e28 !important;
+	    color: white !important;
         /*box-shadow: none !important;*/
     }
 
